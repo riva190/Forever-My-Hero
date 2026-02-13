@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Brother! 🎂</title>
+    <link rel="stylesheet" href="./public/css/birthday-style.css" />
+  </head>
+  <body>
+    <!-- Floating balloons and confetti animation -->
+    <div class="celebration-container" id="celebration-container"></div>
+    
+    <div class="container">
+      <div class="banner-gif">
+        <img id="banner" src="./public/images/mid.gif" alt="banner" />
+      </div>
+      <h1 id="question-heading">Are you ready to celebrate Bro?</h1>
+      <div class="buttons">
+        <button id="yes-button"><p>Yes</p></button>
+        <button id="no-button"><p>No</p></button>
+      </div>
+      
+      <!-- Success Message and Photo Gallery -->
+      <div class="message">
+        <h2 id="success-message">Happy Birthday Rishav Daa! 🎉🎉</h2>
+        
+        <!-- Photo Gallery Section -->
+        <div class="photo-gallery">
+          <h3 class="gallery-title">Some Memories🎈</h3>
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="./public/images/photo1.jpg" alt="Memory 1">
+              <div class="caption">Forever My Hero 💖</div>
+            </div>
+            <div class="slide fade">
+              <img src="./public/images/photo2.jpg" alt="Memory 2">
+              <div class="caption">Built-in Best Friend 🥹</div>
+            </div>
+            <div class="slide fade">
+              <img src="./public/images/photo3.jpg" alt="Memory 3">
+              <div class="caption">Always My Protector 🤝</div>
+            </div>
+            <div class="slide fade">
+              <img src="./public/images/photo4.jpg" alt="Memory 4">
+              <div class="caption">Partners in Crime 😎 </div>
+            </div>
+            <div class="slide fade">
+              <img src="./public/images/photo5.jpg" alt="Memory 4">
+              <div class="caption">Partners in Crime 😎 </div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">❮</a>
+            <a class="next" onclick="changeSlide(1)">❯</a>
+          </div>
+          
+          <!-- Dots for navigation -->
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          
+          <!-- Birthday message -->
+          <div class="birthday-message">
+            <p class="birthday-quote">"To the one who has protected me, supported me, and stood beside me through everything" 🎂</p>
+          </div>
+        </div>
+      
+  
+    </div>
+    
+    <!-- Background Music (hidden) -->
+    <audio id="background-music" loop>
+      <source src="./public/music/birthday-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <script src="./public/js/birthday-script.js"></script>
+  </body>
+</html>
